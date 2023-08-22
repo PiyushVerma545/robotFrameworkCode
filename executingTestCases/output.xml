@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230821 11:13:23.621" rpa="false" schemaversion="4">
+<suite id="s1" name="builtInKeyWords" source="C:\Users\piyuverm\Desktop\robotFrameworkCode\executingTestCases\builtInKeyWords.robot">
+<test id="s1-t1" name="Test 1" line="2">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Should be Equal</arg>
+<arg>1</arg>
+<arg>2</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>1</arg>
+<arg>2</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20230821 11:13:23.653" level="FAIL">1 != 2</msg>
+<status status="FAIL" starttime="20230821 11:13:23.653" endtime="20230821 11:13:23.653"/>
+</kw>
+<status status="FAIL" starttime="20230821 11:13:23.653" endtime="20230821 11:13:23.653"/>
+</kw>
+<kw name="User Keyword 1">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Should be Equal</arg>
+<arg>3</arg>
+<arg>4</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>3</arg>
+<arg>4</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20230821 11:13:23.656" level="FAIL">3 != 4</msg>
+<status status="FAIL" starttime="20230821 11:13:23.656" endtime="20230821 11:13:23.656"/>
+</kw>
+<status status="FAIL" starttime="20230821 11:13:23.656" endtime="20230821 11:13:23.656"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>This is executed</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230821 11:13:23.658" level="INFO">This is executed</msg>
+<status status="PASS" starttime="20230821 11:13:23.656" endtime="20230821 11:13:23.658"/>
+</kw>
+<status status="FAIL" starttime="20230821 11:13:23.656" endtime="20230821 11:13:23.658"/>
+</kw>
+<status status="FAIL" starttime="20230821 11:13:23.653" endtime="20230821 11:13:23.658">Several failures occurred:
+
+1) 1 != 2
+
+2) 3 != 4</status>
+</test>
+<test id="s1-t2" name="Test 2" line="6">
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>1</arg>
+<arg>2</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20230821 11:13:23.658" level="FAIL">1 != 2</msg>
+<status status="FAIL" starttime="20230821 11:13:23.658" endtime="20230821 11:13:23.658"/>
+</kw>
+<kw name="User Keyword 2">
+<tag>robot:continue-on-failure</tag>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>3</arg>
+<arg>4</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20230821 11:13:23.658" level="FAIL">3 != 4</msg>
+<status status="FAIL" starttime="20230821 11:13:23.658" endtime="20230821 11:13:23.658"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>This is executed</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230821 11:13:23.658" level="INFO">This is executed</msg>
+<status status="PASS" starttime="20230821 11:13:23.658" endtime="20230821 11:13:23.658"/>
+</kw>
+<status status="FAIL" starttime="20230821 11:13:23.658" endtime="20230821 11:13:23.658"/>
+</kw>
+<tag>robot:continue-on-failure</tag>
+<status status="FAIL" starttime="20230821 11:13:23.658" endtime="20230821 11:13:23.658">Several failures occurred:
+
+1) 1 != 2
+
+2) 3 != 4</status>
+</test>
+<test id="s1-t3" name="Example" line="11">
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>1</arg>
+<arg>2</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20230821 11:13:23.658" level="FAIL">1 != 2</msg>
+<status status="FAIL" starttime="20230821 11:13:23.658" endtime="20230821 11:13:23.658"/>
+</kw>
+<kw name="User Keyword 1">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Should be Equal</arg>
+<arg>3</arg>
+<arg>4</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>3</arg>
+<arg>4</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20230821 11:13:23.669" level="FAIL">3 != 4</msg>
+<status status="FAIL" starttime="20230821 11:13:23.669" endtime="20230821 11:13:23.669"/>
+</kw>
+<status status="FAIL" starttime="20230821 11:13:23.669" endtime="20230821 11:13:23.669"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>This is executed</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230821 11:13:23.669" level="INFO">This is executed</msg>
+<status status="PASS" starttime="20230821 11:13:23.669" endtime="20230821 11:13:23.669"/>
+</kw>
+<status status="FAIL" starttime="20230821 11:13:23.668" endtime="20230821 11:13:23.669"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>This is executed</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230821 11:13:23.669" level="INFO">This is executed</msg>
+<status status="PASS" starttime="20230821 11:13:23.669" endtime="20230821 11:13:23.669"/>
+</kw>
+<tag>robot:recursive-continue-on-failure</tag>
+<status status="FAIL" starttime="20230821 11:13:23.658" endtime="20230821 11:13:23.669">Several failures occurred:
+
+1) 1 != 2
+
+2) 3 != 4</status>
+</test>
+<status status="FAIL" starttime="20230821 11:13:23.621" endtime="20230821 11:13:23.669"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="builtInKeyWords">builtInKeyWords</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
